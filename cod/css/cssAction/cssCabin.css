@@ -1,0 +1,96 @@
+@import url(../styles.css);
+
+
+/* Основные стили для структуры */
+body {
+    margin: 0;
+    display: flex;
+    background-color: var(--fon1);
+}
+
+/* Фиксированная панель */
+.PanelUserAndNav {
+    position: fixed;
+    border-radius: 15px;
+    width: 25%;
+    height: 90%;
+    margin:  4% 5%;
+    padding: 3%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11111150;
+}
+
+.UserMainInfo{
+    display: flex;
+}
+/* Основная контентная панель с прокруткой */
+.PanelUserAction {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 10% 40%;
+    background-color: var(--someForOther);
+    padding: 20px;
+    overflow-y: auto;
+    width: 70%;
+    height: auto;
+}
+
+.PanelUserAction section{
+    border-radius: 15px;
+}
+
+/* Стили для навигации */
+.UserNavForCabinet a {
+    margin-left: 15px;
+    text-decoration: none;
+    /* color: #333; */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.UserNavForCabinet a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Дополнительные стили для контента */
+.UserFavoriteFood {
+    margin-top: 30px;
+}
+
+.CardUserFavoriteFood {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Стили для форм (пример) 
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

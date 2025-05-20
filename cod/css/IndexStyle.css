@@ -1,0 +1,247 @@
+@import url(styles.css);
+
+/* Общие стили для всех устройств */
+.MainBlock1 {
+  width: 100%;
+  height: 105vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.MainAboutCompany {
+  display: flex;
+  width: 100%;
+  background-color: var(--fon1);
+}
+
+.TEXTMainAboutCompany {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.MainAvtorFood {
+  width: 100%;
+  background: linear-gradient(var(--fon1), 5%, var(--fon4));
+}
+
+.TextAvtorFood,
+.AvtorFood {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ForFood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.SomeFood {
+  object-fit: contain;
+}
+
+#Souse,
+#Pashtet,
+#Desert {
+  object-fit: cover;
+  width: auto;
+}
+
+.MainComment {
+  width: 100%;
+  background-color: var(--fon2);
+}
+
+.ForComment {
+  margin: 2.5vh 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment {
+  padding: 2% 5%;
+  background-color: var(--forcom);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 5.5px 12.5px 14.5px 3.5px var(--fon1);
+}
+
+/* Адаптация для компьютеров (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .MainBlock1 {
+    background-image: url("Pictures/main.jpg");
+  }
+
+  .MainAboutCompany {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  #MainAboutCompanyIMG {
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .TEXTMainAboutCompany {
+    width: 50%;
+    height: 90vh;
+    margin: 8vh 5%;
+  }
+
+  .MainAvtorFood {
+    height: 80vh;
+  }
+
+  .TextAvtorFood {
+    padding: 10vh 10%;
+  }
+
+  .AvtorFood {
+    flex-direction: row;
+  }
+
+  .ForFood {
+    width: 25%;
+    height: 40vh;
+  }
+
+  .SomeFood {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  #Souse,
+  #Pashtet,
+  #Desert {
+    height: 100%;
+  }
+
+  .comment {
+    width: 30%;
+  }
+}
+
+/* Адаптация для планшетов (768px - 1280px) */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .MainBlock1 {
+    background-image: url("Pictures/main.jpg");
+  }
+
+  .MainAboutCompany {
+    flex-direction: row;
+    height: auto;
+  }
+
+  #MainAboutCompanyIMG {
+    width: 35%;
+    height: auto;
+  }
+
+  .TEXTMainAboutCompany {
+    width: 55%;
+    height: auto;
+    margin: 8vh 5%;
+  }
+
+  .MainAvtorFood {
+    height: 80vh;
+  }
+
+  .TextAvtorFood {
+    padding: 10vh 10%;
+  }
+
+  .AvtorFood {
+    flex-direction: row;
+  }
+
+  .ForFood {
+    width: 25%;
+    height: 40vh;
+  }
+
+  .SomeFood {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  #Souse,
+  #Pashtet,
+  #Desert {
+    height: 95%;
+  }
+
+  .comment {
+    width: 30%;
+  }
+}
+
+/* Адаптация для телефонов (max-width: 768px) */
+@media (max-width: 768px) {
+  .MainBlock1 {
+    background-image: url("Pictures/main2.jpg");
+  }
+
+  .MainAboutCompany {
+    flex-direction: row;
+    height: 130%;
+  }
+
+  #MainAboutCompanyIMG {
+    width: 0;
+    display: none;
+  }
+
+  .TEXTMainAboutCompany {
+    width: 90%;
+    height: 90vh;
+    margin: 8vh 5%;
+  }
+
+  .MainAvtorFood {
+    height: 130vh;
+  }
+
+  .TextAvtorFood {
+    padding: 8vh 10%;
+  }
+
+  .AvtorFood {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ForFood {
+    width: 80%;
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+
+  .SomeFood {
+    height: 90%;
+    width: auto;
+    aspect-ratio: 1/1;
+  }
+
+  #Souse,
+  #Pashtet,
+  #Desert {
+    height: 80%;
+  }
+
+  .comment {
+    width: 45%;
+  }
+
+  .ForComment .comment:nth-child(3) {
+    display: none;
+  }
+}

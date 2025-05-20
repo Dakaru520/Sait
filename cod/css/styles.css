@@ -1,0 +1,431 @@
+/*Цвета и шрифты*/
+:root {
+  --White: #ffffff;
+  --Black: #111111;
+  --Footer: #4c5866;
+  --svetgrey: #b1b1b1;
+  --forcom: #e7e7e7;
+  --temngrey: #6a6a6a;
+  --fon1: #172918;
+  --fon2: #315b34;
+  --fon3: #e6f8ae;
+  --fon4: #496a4b;
+  --someForOther: #ffbea6;
+  --opacity: 0.7;
+}
+@font-face {
+  font-family: "Playfair Display Italic";
+  src: url("fonts/PlayfairDisplay-Italic.eot");
+  src: url("fonts/PlayfairDisplay-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Italic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Display Bold Italic";
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display Bold Italic";
+}
+p,
+a {
+  font-family: "Playfair Display Italic";
+}
+.Zagolovok1,
+h1,
+h2 {
+  font-size: clamp(1.5rem, 1.137rem + 1.547vw, 2.375rem);
+  font-family: "Playfair Display Bold Italic";
+  color: var(--White);
+}
+
+.Zagolovok2,
+h3,
+h4 {
+  font-size: clamp(1.125rem, 0.711rem + 1.768vw, 2.125rem);
+  font-family: "Playfair Display Bold Italic";
+  color: var(--White);
+}
+
+.Abzach,
+.FAbzach,
+h5 {
+  font-size: clamp(0.875rem, 0.461rem + 1.768vw, 1.875rem);
+  font-family: "Playfair Display Italic";
+  color: var(--White);
+}
+
+.text,
+.Ftext {
+  font-size: clamp(0.5rem, 0.086rem + 1.768vw, 1.5rem);
+  font-family: "Playfair Display Italic";
+  color: var(--White);
+}
+#ComName {
+  color: var(--Black);
+}
+#ComText {
+  color: var(--Black);
+}
+
+.IndexHeadernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.IndexHeaderul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.IndexHeadera {
+  display: flex;
+  margin-right: 30px;
+  color: var(--White);
+  text-decoration: none;
+}
+#LogoIMG {
+  width: 100%;
+}
+#profileIMG {
+  height: 6.5vh !important;
+}
+
+.Headernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.Headerul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.Headera {
+  color: var(--White);
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important ;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.no-click {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: var(--svetgrey) !important;
+}
+
+footer {
+  background-color: var(--fon1);
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+}
+.footerCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1280px) {
+  #burger {
+    display: none !important;
+  }
+
+  .IndexHeader {
+    margin-top: -10%;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 0.85;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    background-color: var(--Black);
+    padding: 0 5%;
+    z-index: 100;
+  }
+  .Header {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 0.85;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    background-color: var(--Black);
+    padding: 0 5%;
+    z-index: 100;
+  }
+}
+@media (min-width: 950px) and (max-width: 1280px) {
+  #burger {
+    display: none !important;
+  }
+
+  .IndexHeader {
+    margin-top: -18%;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    padding: 0 5%;
+    z-index: 100;
+  }
+
+  .Header {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 0.85;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    background-color: var(--Black);
+    padding: 0 5%;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .IndexHeader {
+    margin-top: -18%;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    padding: 0 5%;
+    z-index: 100;
+  }
+  #nav {
+    display: none !important;
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger span {
+    width: 5vw;
+    height: 1vh;
+    background-color: var(--TextBaseColor);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+.Header {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  opacity: 0.85;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  background-color: var(--Black);
+  padding: 0 5%;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--TextBaseColor);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .IndexHeader {
+    margin-top: -35%;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 0.85;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    background-color: var(--Black);
+    padding: 0 5%;
+    z-index: 100;
+  }
+  #nav {
+    display: none !important;
+  }
+}
+
+.Header {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  opacity: 0.85;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  background-color: var(--Black);
+  padding: 0 5%;
+  z-index: 100;
+}
+
+.NavigateBlock {
+  display: none !important;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 5%;
+  background: none !important;
+  height: 100px !important;
+  border-radius: 10px;
+  width: auto !important;
+}
+.NavigateBlock.active {
+  display: flex !important;
+  justify-content: start !important;
+}
+.burger {
+  display: flex !important;
+}
+
+.NavigateButton {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0px !important;
+}
+.NavigateButton:hover {
+  background-color: var(--svetgrey);
+  box-shadow: 0 0 0 0px var(--Black), 0 0 0 0px var(--svetgrey) !important;
+  text-decoration: none !important;
+  color: var(--forcom);
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+#burger{
+    z-index: 100;
+}
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--forcom);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#NavigateBlock {
+  margin: -96vh 0;
+  width: 50vw !important;
+  height: 100vh !important;
+  background-color: var(--Black);
+  align-items: center;
+}
+.NavBurg {
+  padding: 20% 0;
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Black);
+  opacity: 0.85;
+  justify-content: center;
+  align-items: center;
+}

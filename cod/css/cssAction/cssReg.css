@@ -1,0 +1,175 @@
+@import url(../styles.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto;
+  background-color: var(--fon2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 5%;
+}
+
+/* Стили для формы регистрации */
+
+.logo-link {
+  background-color: var(--fon1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-link a {
+  color: var(--White);
+  text-decoration: none;
+  font-family: "Playfair Display Italic";
+  transition: color 0.3s ease;
+}
+
+.logo-link a:hover {
+  color: var(--fon3);
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: var(--White);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h1 {
+  color: var(--fon4);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-form p {
+  color: var(--temngrey);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration-form hr {
+  border: 1px solid var(--forcom);
+  margin: 20px 0;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--Footer);
+  font-family: "Playfair Display Italic";
+  font-weight: bold;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid var(--forcom);
+  border-radius: 5px;
+  font-family: "Playfair Display Italic";
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.registration-form input[type="text"]:focus,
+.registration-form input[type="password"]:focus {
+  border-color: var(--fon4);
+  outline: none;
+}
+
+.registration-form label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.registration-form .terms-link {
+  color: var(--fon4);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.registration-form .terms-link:hover {
+  color: var(--fon2);
+}
+
+.registration-form .account-exists {
+  color: var(--temngrey);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancelbtn,
+.signupbtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Playfair Display Italic";
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.cancelbtn {
+  background-color: var(--svetgrey);
+  color: var(--White);
+}
+
+.cancelbtn:hover {
+  background-color: var(--temngrey);
+}
+
+.signupbtn {
+  background-color: var(--fon4);
+  color: var(--White);
+}
+
+.signupbtn:hover {
+  background-color: var(--fon2);
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .clearfix {
+    flex-direction: column;
+  }
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
