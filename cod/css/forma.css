@@ -1,0 +1,272 @@
+
+        /* Сброс стандартных отступов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Основные стили страницы */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tel{
+        color: black;
+        }
+        
+        /* Шапка */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo-text {
+            line-height: 1.2;
+        }
+        
+        .logo-text .main {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .logo-text .sub {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .navigation {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-link {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #D94F52;
+        }
+        
+        .back-btn {
+            background-color: #D94F52;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: #D94F52;
+        }
+        
+        /* Основное содержимое */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 50px;
+        }
+        
+        /* Форма регистрации */
+        .registration-form {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 0 auto;
+        }
+        
+        .form-title {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        .form-input:focus {
+            border-color: #D94F52;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #D94F52;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #D94F52;
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        .success-message {
+            color: #27ae60;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(39, 174, 96, 0.1);
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        
+                /* Подвал */
+        .block5 {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 5%;
+            text-align: center;
+        }
+
+        .tb5_1, .tb5_2 {
+            margin: 5px 0;
+        }
+
+        .tb5_3 {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .svg {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            filter: invert(1);
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .svg:hover {
+            opacity: 1;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            margin: 100px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .tel-number {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+            color: black;
+        }
+        
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+            }
+            
+            .navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .registration-form {
+                padding: 30px 20px;
+            }
+            
+            .form-title {
+                font-size: 24px;
+            }
+        }

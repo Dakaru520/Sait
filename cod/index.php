@@ -34,7 +34,7 @@
                 <li><a class="Abzach" class="IndexHeadera" id="nav" href="#MainAboutCompany">О Компании</a></li>
                 <li><a class="Abzach" class="IndexHeadera" id="nav" href="map.html">Местоположение</a></li>
                 <li><a class="Abzach" class="IndexHeadera" id="nav" href="Catalog.php">Каталог</a></li>
-                <li><a class="Abzach" id="nav" href="Registr.php"><img id="profileIMG"
+                <li><a class="Abzach" id="nav" href="forma.php"><img id="profileIMG"
                             src="css/Pictures/profile-user.svg"></a></li>
                 <div class="burger" id="burger">
                     <span></span>
@@ -46,12 +46,11 @@
                         <a class="Abzach" class="IndexHeadera" href="#MainAboutCompany">О Компании</a>
                         <a class="Abzach" class="IndexHeadera" href="map.html">Местоположение</a>
                         <a class="Abzach" class="IndexHeadera" href="Catalog.html">Каталог</a>
-                        <a class="Abzach" class="IndexHeadera" href="Registr.php">Личный кабинет</a>
+                        <a class="Abzach" class="IndexHeadera" href="forma.php">Личный кабинет</a>
                     </nav>
                 </div>
             </ul>
         </nav>
-
     </header>
     <!--О компании текст и картинка-->
     <article class="MainAboutCompany" id="MainAboutCompany">
